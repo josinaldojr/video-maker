@@ -10,6 +10,7 @@ async function start () {
 
   content.searchTerm = askAndReturnSearchhTerm()
   content.prefixs = askAndReturnPrefix()
+  content.lang = askAndReturnLanguage()
 
   await robots.text(content)
 
@@ -26,6 +27,7 @@ async function start () {
   }
 
   console.log(JSON.stringify(content, null, 4))
+
 }
 
 start()
