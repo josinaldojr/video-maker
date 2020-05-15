@@ -1,0 +1,24 @@
+{
+  "name": "video-maker",
+  "version": "1.0.0",
+  "description": "Projeto criado como forma de aprendizado, a partir do projeto Open Source já feito por Filipe Deschamps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josinaldojr/video-maker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josinaldojr/video-maker/issues"
+  },
+  "homepage": "https://github.com/josinaldojr/video-maker#readme",
+  "dependencies": {
+    "algorithmia": "^0.3.10",
+    "readline-sync": "^1.4.10",
+    "sbd": "^1.0.18"
+  }
+}
