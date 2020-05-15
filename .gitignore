@@ -1,3 +1,7 @@
+# Created by https://www.gitignore.io/api/node
+# Edit at https://www.gitignore.io/?templates=node
+
+### Node ###
 # Logs
 logs
 *.log
@@ -36,6 +40,9 @@ build/Release
 node_modules/
 jspm_packages/
 
+# folder created to allocate images uploaded by the tests
+__tests__/outputs
+
 # TypeScript v1 declaration files
 typings/
 
@@ -57,10 +64,5 @@ typings/
 # dotenv environment variables file
 .env
 
-# next.js build output
-.next
-
 # credentials
-/credentials/*.json
-
-
+credentials/*.json
