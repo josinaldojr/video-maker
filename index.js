@@ -8,6 +8,7 @@ async function start () {
 
   content.searchTerm = askAndReturnSearchhTerm()
   content.prefixs = askAndReturnPrefix()
+  content.lang = askAndReturnLanguage()
 
   await robots.text(content)
 
@@ -21,6 +22,14 @@ async function start () {
     const selectedPrefixText = prefixes[selectedPrefixIndex]
 
     return selectedPrefixText
+  }
+
+  function askAndReturnLanguage() {
+    const language = ['pt', 'en']
+    const selectedLangIndex = readline.keyInSelect(language, 'Choice Language: ')
+    const selectedLangText = language[selectedLangIndex]
+    
+    return selectedLangText
   }
 
   console.log(content)
