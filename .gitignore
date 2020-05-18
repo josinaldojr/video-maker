@@ -8,10 +8,6 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-lerna-debug.log*
-
-# Diagnostic reports (https://nodejs.org/api/report.html)
-report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 # Runtime data
 pids
@@ -24,12 +20,11 @@ lib-cov
 
 # Coverage directory used by tools like istanbul
 coverage
-*.lcov
 
 # nyc test coverage
 .nyc_output
 
-# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
+# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
 
 # Bower dependency directory (https://bower.io/)
@@ -51,9 +46,6 @@ __tests__/outputs
 # TypeScript v1 declaration files
 typings/
 
-# TypeScript cache
-*.tsbuildinfo
-
 # Optional npm cache directory
 .npm
 
@@ -71,6 +63,7 @@ typings/
 
 # dotenv environment variables file
 .env
+<<<<<<< HEAD
 .env.test
 
 # parcel-bundler cache (https://parceljs.org/)
@@ -115,8 +108,10 @@ dist/
 tmp/
 temp/
 
-# End of https://www.gitignore.io/api/node
-
 # credentials
->>>>>>> text-robots
+
 credentials/*.json
+
+# End of https://www.gitignore.io/api/node
+=======
+>>>>>>> be44e3fdbad5b78622f0adedc62264192d949ccd
