@@ -111,4 +111,5 @@ temp/
 
 credentials/*.json
 
+content.json
 # End of https://www.gitignore.io/api/node
