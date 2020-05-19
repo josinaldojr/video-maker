@@ -99,11 +99,10 @@ dist/
 # DynamoDB Local files
 .dynamodb/
 
-<<<<<<< HEAD
 # TernJS port file
 .tern-port
 
-=======
+
 # Temporary folders
 tmp/
 temp/
@@ -113,5 +112,3 @@ temp/
 credentials/*.json
 
 # End of https://www.gitignore.io/api/node
-=======
->>>>>>> be44e3fdbad5b78622f0adedc62264192d949ccd
