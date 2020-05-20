@@ -114,5 +114,6 @@ credentials/*.json
 content.json
 
 content/*.png
+content/*.json
 .DB_Store
 # End of https://www.gitignore.io/api/node

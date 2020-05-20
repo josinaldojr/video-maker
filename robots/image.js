@@ -5,6 +5,8 @@ const state = require('./state')
 
 const googleSearchCredentials = require('../credentials/google-search.json')
 
+const imageUrlBlackList = require('../content/blackList.json').imageUrlBlackList
+
 async function robot() {
   const content = state.load()
 
@@ -48,13 +50,18 @@ async function robot() {
         const imageUrl = images[imageIndex]
 
         try {
- 
+          if(content.downloadedImages.includes(imageUrl)) {
+            throw new Error('Image has already been lowered')
+          }
+          if(imageUrlBlackList.includes(imageUrl)) {
+            throw new Error('Image in black list')
+          }
           await downloadAndSave(imageUrl, `${sentenceIndex}-original.png`)
           content.downloadedImages.push(imageUrl)
           console.log(`>[robo-image] [${sentenceIndex}] [${imageIndex}] Image successfully downloaded: ${imageUrl}`)
           break
         } catch(error) {
-          console.log(`> [robo-image] [${sentenceIndex}] [${imageIndex}] Erro ao baixar (${imageUrl}): ${error}`)
+          console.log(`> [robo-image] [${sentenceIndex}] [${imageIndex}] Download error (${imageUrl}): ${error}`)
         }
       }
     }
