@@ -3,5 +3,4 @@ Projeto criado como forma de aprendizado, a partir do projeto Open Source já fe
 
 
 
-
-# <p align="center">Feito por <strong>Josinaldo Pontes </p>
+<p align="center">Feito por <strong>Josinaldo Pontes </p>
